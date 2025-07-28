@@ -1,0 +1,67 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  padding: 0 16px;
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  background-color: transparent; 
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+/* Status: dot + text */
+.statusContainer {
+  display: flex;
+  align-items: center;
+}
+
+.statusDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-gray-dust);
+  margin-right: 6px;
+}
+.peerOfflineDot {
+  background-color: var(--color-gray-dust);
+}
+.peerOnlineDot {
+  background-color: var(--color-primary);
+}
+.connectingDot {
+  background-color: var(--color-secondary);
+}
+
+.statusText {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-body-medium, 14px);
+  color: var(--color-white-pure);
+}
+.peerOffline {
+  color: var(--color-gray-dust);
+}
+.peerOnline {
+  color: var(--color-primary);
+}
+.connecting {
+  color: var(--color-secondary);
+}
+
+/* Exit button on right */
+.exitButton {
+  background: none;
+  border: none;
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-body-md);
+  color: var(--color-white-pure);
+  cursor: pointer;
+  padding: 8px;
+}
+.exitButton:active {
+  opacity: 0.6;
+}
